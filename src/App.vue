@@ -2,8 +2,7 @@
   <div class="px-3 py-10 md:px-10">
     <div class="w-full sm:w-1/2 lg:w-1/3 mx-auto">
 
-
-      <TodoSpinner />
+      <TodoSpinner v-if="loading" />
 
       <TodoFormAdd />
 
@@ -19,7 +18,7 @@ import TodoEmpty from './components/TodoEmpty.vue';
 import TodoFormAdd from './components/TodoFormAdd.vue';
 import TodoItems from './components/TodoItems.vue';
 import TodoSpinner from './components/TodoSpinner.vue';
-import axios from 'axios';
+
 
 
 
@@ -31,19 +30,17 @@ export default {
     TodoItems,
     TodoEmpty
   },
-
   data() {
     return {
-      todos: []
+      loading: true
     }
-  }
+  },
 
-  ,
+
   created() {
-    axios.get('http://localhost:3000/todos')
-      .then((response) => {
-        this.todos = response.data
-      })
+    this.$store.dispatch('getTodos').finally(() => {
+      this.loading = false
+    })
   }
 }
 </script>
