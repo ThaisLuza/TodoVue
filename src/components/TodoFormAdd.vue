@@ -30,7 +30,7 @@ export default {
         return
       }
 
-      console.log('this.title', this.title)
+
       this.$store.dispatch('addTodo', {
         title: this.title,
         completed: false
