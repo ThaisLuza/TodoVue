@@ -1,24 +1,20 @@
-# new-project
+# Projeto Vue - Estudo com Composition API
 
-## Project setup
-```
+Projeto simples desenvolvido com **Vue 3**, focado no aprendizado da **Composition API**. Apesar de ser um estudo, também utiliza **Vuex** para gerenciamento de estado e **TailwindCSS** para estilização.
+
+## Tecnologias utilizadas
+
+- Vue 3
+- Composition API
+- Vuex
+- TailwindCSS
+
+## Objetivo
+
+Praticar os conceitos da Composition API em um projeto funcional, entendendo como estruturar componentes e integrar com Vuex e Tailwind de forma eficiente.
+
+## Como rodar o projeto
+
+```bash
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+npm run dev
