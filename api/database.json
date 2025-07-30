@@ -1,24 +1,19 @@
 {
   "todos": [
     {
-      "title": "teste q",
+      "title": "Estudar Vue.js agora",
       "completed": false,
-      "id": "d504"
+      "id": "80d2"
     },
     {
-      "title": "outrp teste",
-      "completed": false,
-      "id": "1ede"
+      "id": "5981",
+      "title": "Estudar composition API",
+      "completed": false
     },
     {
-      "title": "teste 1",
-      "completed": false,
-      "id": "7841"
-    },
-    {
-      "title": "teste 2",
-      "completed": false,
-      "id": "25fe"
+      "id": "8f7f",
+      "title": "Estudar Javascript",
+      "completed": false
     }
   ]
 }
